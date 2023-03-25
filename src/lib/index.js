@@ -1,8 +1,7 @@
 import { Sequelize, Op, QueryTypes } from 'sequelize';
 
-export let sqlise;
 export const PgSql = (config) => {
-    return sqlise = new Sequelize(config.database, config.user, config.password, {
+    return new Sequelize(config.database, config.user, config.password, {
         host: config.host,
         dialect: config.dialect,
 
