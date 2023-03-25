@@ -1,6 +1,7 @@
 {
 	"name": "libpg",
 	"version": "0.0.1",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -37,6 +38,7 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
+		"@esbuild/linux-x64": "^0.17.13",
 		"@sveltejs/adapter-node": "^1.2.3",
 		"sequelize": "^6.30.0"
 	}
