@@ -1,6 +1,5 @@
 export default PgSql;
 declare class PgSql {
-    static sqlise: any;
     constructor(config: any);
     sqlise: Sequelize;
     Connect(): Promise<void>;

@@ -1,7 +1,7 @@
 import { Sequelize, Op, QueryTypes } from 'sequelize';
 
 class PgSql {
-    static sqlise;
+    sqlise;
     constructor(config) {
         this.sqlise = new Sequelize(config.database, config.user, config.password, {
             host: config.host,
